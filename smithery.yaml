@@ -1,0 +1,77 @@
+version: "1.0"
+name: "outlook-calendar-mcp"
+displayName: "Outlook Calendar MCP Server"
+description: "Outlook/Microsoft 365 캘린더를 MCP로 연결해 에이전트가 일정을 자동화합니다"
+author: "seojeon9"
+homepage: "https://github.com/seojeon9/outlook-mcp"
+repository: "https://github.com/seojeon9/outlook-mcp"
+license: "MIT"
+version: "1.0.0"
+
+# MCP 서버 설정
+mcp:
+  command: "uv"
+  args: ["run", "outlook-mcp"]
+
+# 필요한 환경 변수
+environment:
+  required:
+    - AZURE_CLIENT_ID
+    - AZURE_CLIENT_SECRET
+  optional:
+    - AZURE_TENANT_ID
+    - HOST
+    - PORT
+    - REDIRECT_URI
+    - TOKEN_FILE
+
+# 지원하는 도구들
+tools:
+  - name: "authenticate"
+    description: "Microsoft 계정으로 인증합니다"
+  - name: "get_events"
+    description: "일정을 조회합니다"
+  - name: "create_event"
+    description: "새 일정을 생성합니다"
+  - name: "delete_event"
+    description: "일정을 삭제합니다"
+  - name: "update_event"
+    description: "일정을 수정합니다"
+  - name: "get_user_info"
+    description: "사용자 정보를 조회합니다"
+
+# 태그
+tags:
+  - "calendar"
+  - "outlook"
+  - "microsoft"
+  - "office365"
+  - "mcp"
+
+# 카테고리
+categories:
+  - "productivity"
+  - "integration"
+
+# 설치 요구사항
+requirements:
+  python: ">=3.10"
+  dependencies:
+    - "uv"
+    - "fastapi"
+    - "httpx"
+    - "python-dotenv"
+
+# 설정 가이드
+setup:
+  steps:
+    - "Azure Portal에서 애플리케이션 등록"
+    - ".env 파일에 Azure AD 정보 입력"
+    - "MCP 서버 실행"
+    - "브라우저에서 OAuth 인증 완료"
+
+# 사용 예시
+examples:
+  - "내 이번 주 일정을 보여주세요"
+  - "내일 오후 2시에 팀 회의 일정을 추가해주세요"
+  - "팀 회의 일정을 삭제해주세요"
