@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+       "outlook-calendar": {
+         "command": "uv",
+         "args": ["run", "outlook-mcp"],
+         "cwd": "D:\\WorkPython\\outlook_mcp"
+       }
+     }
+}

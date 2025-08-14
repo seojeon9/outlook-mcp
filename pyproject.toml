@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "outlook-mcp-server"
+version = "1.0.0"
+description = "Microsoft Outlook Calendar MCP Server with Azure AD OAuth"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "mcp>=1.0.0",
+    "fastapi>=0.104.1",
+    "uvicorn>=0.24.0",
+    "httpx>=0.25.0",
+    "python-jose[cryptography]>=3.3.0",
+    "python-multipart>=0.0.6",
+    "pydantic>=2.0.0",
+    "aiofiles>=23.2.1",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+outlook-mcp = "src.mcp_server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+

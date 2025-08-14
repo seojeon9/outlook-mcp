@@ -1,0 +1,14 @@
+# Azure AD 설정
+AZURE_CLIENT_ID=your_client_id_here
+AZURE_CLIENT_SECRET=your_client_secret_here
+AZURE_TENANT_ID=common
+
+# OAuth 설정
+REDIRECT_URI=http://localhost:8000/auth/callback
+
+# 서버 설정
+HOST=localhost
+PORT=8000
+
+# 토큰 저장 파일
+TOKEN_FILE=token.json

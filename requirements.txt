@@ -1,0 +1,12 @@
+mcp
+fastapi
+uvicorn
+httpx
+python-jose[cryptography]
+python-multipart
+pydantic
+aiofiles
+python-dotenv
+mcp
+fastapi
+uvicorn
