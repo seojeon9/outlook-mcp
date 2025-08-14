@@ -1,5 +1,7 @@
 # Outlook Calendar MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@seojeon9/outlook-mcp)](https://smithery.ai/server/@seojeon9/outlook-mcp)
+
 Outlook/Microsoft 365 캘린더를 MCP(Model Context Protocol)로 연결해,
 에이전트가 일정 조회/생성/수정/삭제를 자동화합니다.
 > Acknowledgements: 본 초기 버전은 바이브코딩으로 빠르게 프로토타이핑되었습니다.
@@ -43,6 +45,14 @@ Claude Desktop 설정 파일에 추가:
 **설정 파일 위치:**
 - Windows: `%APPDATA%\Claude\claude_desktop_config.json`
 - macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+
+### Installing via Smithery
+
+To install Outlook Calendar for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@seojeon9/outlook-mcp):
+
+```bash
+npx -y @smithery/cli install @seojeon9/outlook-mcp --client claude
+```
 
 ## 사용 예시
 
