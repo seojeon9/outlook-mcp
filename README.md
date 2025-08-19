@@ -72,5 +72,5 @@ outlook_mcp/
 
 ## 문서
 
-- [Azure AD 설정 가이드](docs/azure_ad_setup.md)
+- [Azure Entra ID 설정 가이드](docs/azure_ad_setup.md)
 - [Claude Desktop 설정](docs/claude_setup.md)
