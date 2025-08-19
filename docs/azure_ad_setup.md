@@ -1,6 +1,6 @@
 # Azure AD 설정 가이드
 
-Microsoft Graph API 사용을 위한 Azure AD 애플리케이션 등록 방법입니다.
+Microsoft Graph API 사용을 위한 Azure Entra ID(AD) 애플리케이션 등록 방법입니다.
 
 ### 단계별 설정
 
